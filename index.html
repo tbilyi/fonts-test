@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>!DOCTYPE</title>
+    <link rel="stylesheet" href="./styles/style.css">
+	<script src="./js/script.js"></script>
+ </head>
+ <body>
+	<div class="container">
+		<div class="row font-header">
+			<div class="col-12 col-lg-8 title">
+				<h1>Please select one font</h1>
+			</div>
+			<div class="col-12 col-lg-4 menu">
+				<ul>
+					<li class="my-fonts-btn">
+						<button onclick="showMyFonts(true)">My Fonts</button>
+					</li>
+					<li class="buy-fonts-btn active">
+						<button onclick="showMyFonts(false)">Buy Fonts</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row buy-fonts-body">
+			<div class="col-12 col-lg-4">
+				<div class="square-container big-square-container">
+					<input type="radio" id="font1" class="font-radio"
+						   name="fonts" value="Merriweather">
+					<div class="square big-square bg-green">
+						<span class="letter">M</span>
+					</div>
+					<label for="font1">
+						<p class="square-text">Merriweather project is led by Sorkin Type</p>
+					</label>
+				</div>
+			</div>
+			<div class="col-12 col-lg-8 small-squares">
+				<div class="row square-container small-square-container">
+					<input type="radio" id="font2" class="font-radio"
+						   name="fonts" value="Roboto">
+					<div class="square small-square bg-pink">
+						<span class="letter">R</span>
+					</div>
+					<label for="font2">
+						<p class="square-text">Roboto doesn't compromise, allowing letters</p>
+					</label>
+				</div>
+				<div class="row square-container small-square-container">
+					<input type="radio" id="font3" class="font-radio"
+						   name="fonts" value="NotoSans">
+					<div class="square small-square bg-blue">
+						<span class="letter">NS</span>
+					</div>
+					<label for="font3">
+						<p class="square-text">Noto Sans covers over 30 scripts</p>
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="row my-fonts-body">
+			<div class="col-12">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+					incididunt ut labore et dolore magna aliqua</p>
+			</div>
+		</div>
+	</div>
+ </body> 
+</html>

@@ -1,0 +1,242 @@
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat/Montserrat-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat/Montserrat-Medium.ttf");
+  font-weight: 500;
+}@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat/Montserrat-SemiBold.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat/Montserrat-Bold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat/Montserrat-ExtraBold.ttf");
+  font-weight: 800;
+}
+@font-face {
+  font-family: Montserrat;
+  src: url("../fonts/Montserrat/Montserrat-Black.ttf");
+  font-weight: 900;
+}
+body {
+  font-family: Montserrat;
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.font-header h1 {
+  font-size: 47px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+
+}
+.buy-fonts-body {
+  border: 4px solid #bfcade;
+  border-radius: 10px;
+}
+.col-12 {
+  flex-basis: 100%;
+  max-width: 100%;
+}
+.col-4 {
+  flex-basis: 33.333333%;
+  max-width: 33.333333%;
+}
+.col-6 {
+  flex-basis: 50%;
+  max-width: 50%;
+}
+.col-8 {
+  flex-basis:66.666667%;
+  max-width: 66.666667%;
+}
+.square {
+  padding: 5px;
+  border-radius: 25px;
+  position: relative;
+  border: 2px solid #3f3f3f;
+  display: flex;
+}
+.big-square {
+  width: 176px;
+  height: 176px;
+  float: right;
+}
+.small-square {
+  width: 123px;
+  height: 123px;
+}
+.square.bg-green {
+  background: #00a652;
+  background-clip: content-box;
+}
+.square.bg-pink {
+  background: #ff7fc2;
+  background-clip: content-box;
+}
+.square.bg-blue {
+  background: #006dfe;
+  background-clip: content-box;
+}
+.square-text {
+  color: #212830;
+  position: relative;
+  width: 250px;
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: -1px;
+  margin-top: 20px;
+}
+.big-square-container .square-text {
+  margin-left: 60px;
+}
+.small-square-container .square-text {
+  margin-left: 70px;
+}
+.square-text:before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: -32px;
+  width: 14px;
+  height: 14px;
+  background-color: #99a1b0;
+  border-radius: 50%;
+}
+
+.letter {
+  line-height: 1;
+  align-self: flex-end;
+  font-weight: 700;
+  opacity: 0.25;
+  color: #ffffff;
+}
+.big-square .letter {
+  font-size: 62px;
+  padding-left: 23px;
+  padding-bottom: 20px;
+}
+.small-square .letter {
+  font-size: 35px;
+  padding-left: 15px;
+  padding-bottom: 13px;
+}
+/*.font-radio {*/
+/*  display: none;*/
+/*}*/
+.my-fonts-body,
+.buy-fonts-body.show-my-fonts,
+.font-radio {
+  display: none;
+}
+.square-text:hover {
+  cursor: pointer;
+}
+.font-radio:checked + .square,
+.font-radio:checked ~ label .square-text {
+  opacity: 50%;
+}
+.my-fonts-body.show-my-fonts {
+  display: block;
+}
+.menu {
+  display: flex;
+  align-self: flex-end;
+  padding-bottom: 25px;
+}
+.menu ul {
+  list-style-type: none;
+}
+.menu ul li {
+  float: left;
+}
+.menu ul li button {
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+}
+.buy-fonts-btn {
+  margin-left: 10px;
+}
+.menu ul li.active button {
+  color: #fd520c;
+}
+.menu ul li:not(.active) button {
+  cursor: pointer;
+}
+.menu ul li:not(.active) button:hover {
+  opacity: 50%;
+}
+.menu ul li button:focus {
+  outline: none;
+}
+.big-square-container {
+  padding: 70px 70px 0 70px;
+}
+.small-square-container {
+  padding: 20px 80px;
+}
+.small-squares {
+  margin: 50px 0;
+}
+@media (min-width: 576px) {
+  .container {
+    max-width:540px
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width:720px
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width:960px
+  }
+  .col-lg-4 {
+    flex-basis: 33.333333%;
+    max-width: 33.333333%;
+  }
+  .col-lg-8 {
+    flex-basis:66.666667%;
+    max-width: 66.666667%;
+  }
+  .big-square {
+    float: none;
+  }
+  .big-square-container .square-text {
+    margin-left: 25px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width:1140px
+  }
+}
+/*# sourceMappingURL=style.css.map */
